@@ -261,7 +261,7 @@ def main():
                 st.experimental_rerun()
 
         elif st.session_state.form_step == 2:
-          subjects = ["Math", "Science", "AI", "English", "Social Studies", "History", "Geography", "CS", "Programming", "Environment", "Philosophy", "Psychology"]
+            subjects = ["Math", "Science", "AI", "English", "Social Studies", "History", "Geography", "CS", "Programming", "Environment", "Philosophy", "Psychology"]
             subject = st.selectbox("Which subject are you studying?", subjects)
             st.session_state.subject = subject
             st.session_state.subjects.append(subject)
@@ -296,4 +296,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-        st.error("Failed to generate quiz. Please try again.")
