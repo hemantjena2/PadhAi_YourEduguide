@@ -62,7 +62,7 @@ class MasterAgent:
         agent_decision = response.choices[0].message.content.strip().lower()
         return agent_decision
     
-    class DiscoverAgent:
+class DiscoverAgent:
     def __init__(self):
         self.client = client
         
