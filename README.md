@@ -42,7 +42,14 @@ The frontend is built with Streamlit and offers an intuitive user interface for:
    ```
    pip install -r requirements.txt
    ```
-3. Set up environment variables (MongoDB URI, OpenAI API key, etc.)
+3. Create a .env file in the root directory with the following variables: 
+  ```
+  OPENAI_API_KEY=your_openai_api_key_here
+  MONGODB_URI=your_mongodb_uri_here
+  DB_NAME=your_database_name
+  COLLECTION_NAME=your_collection_name
+  ```
+  Replace the placeholders with your actual API key and MongoDB details.
 4. Run the Flask backend:
    ```
    python backend.py
