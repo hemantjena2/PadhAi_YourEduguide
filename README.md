@@ -1,5 +1,3 @@
-Here's a draft README file for your GitHub repository:
-
 # PadhAI - Your EduGuide
 
 PadhAI is an intelligent educational assistant designed to provide personalized learning experiences for students. It uses AI agents to assess knowledge, create learning roadmaps, and offer tailored explanations across various subjects.
@@ -68,6 +66,3 @@ The frontend is built with Streamlit and offers an intuitive user interface for:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-[Insert your chosen license here]
