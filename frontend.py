@@ -5,10 +5,12 @@ import json
 API_ENDPOINT = "http://localhost:5000"
 
 SUBJECT_TOPICS = {
-    "Math": ["Algebra", "Calculus", "Geometry"],
+    "Mathematics": ["Algebra", "Calculus", "Geometry"],
     "Science": ["Physics", "Chemistry", "Biology"],
     "English": ["Grammar", "Literature"],
-    "Social Studies": ["History", "Geography"]
+    "Social Studies": ["History", "Geography", "Environment"],
+    "Humanities": ["Philosophy","Psychology"],
+    "IT": ["CS","Programming"]
 }
 
 st.markdown("""
@@ -214,7 +216,7 @@ def ask_directly_view():
         st.experimental_rerun()
 
 def main():
-    st.title("PadhAi - EduGuide")
+    st.title("PadhAi - Your EduGuide")
 
     if 'initialized' not in st.session_state:
         st.session_state.initialized = False
@@ -251,7 +253,7 @@ def main():
             with col1:
                 name = st.text_input("What's your name?")
             with col2:
-                standards = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"]
+                standards = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th","11th","12th"]
                 standard = st.selectbox("Which standard are you studying in?", standards)
                 
             st.session_state.name = name
@@ -261,7 +263,7 @@ def main():
                 st.experimental_rerun()
 
         elif st.session_state.form_step == 2:
-            subjects = ["Math", "Science", "AI", "English", "Social Studies", "History", "Geography", "CS", "Programming", "Environment", "Philosophy", "Psychology"]
+            subjects = ["Mathematics", "Science", "English", "Social Studies", "Humanities", "IT"]
             subject = st.selectbox("Which subject are you studying?", subjects)
             st.session_state.subject = subject
             st.session_state.subjects.append(subject)
